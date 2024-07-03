@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-    h1 p{
-        color: aquamarine;
-    }
-    h3>p{
-        color: blue;
-    }
     
+    h1 p{
+        color:aqua;
+    }
+    h2>p{
+        color:blanchedalmond;
+    }
+    h1+h2{
+        color:blueviolet
+    }
+    h5~h3{
+        color:darkred
+
+    }
 </style>
 
 </head>
 
 <body>
+    <h5>
+        this is grand parent
+    
     <h1>this is first child
         <p>this is first grand child</p>
         <p>this is second grand child</p>
@@ -26,12 +36,13 @@
         <p>this is fourth grand child</p>
         <p>this is fifth grand child</p>
         <p>this is sixth grand child</p>
-    </h1>
+    </h2>
     <h3>this is thirdchild
         <p>this is seventh grand child</p>
         <p>this is eighth grand child</p>
         <p>this is ninth grand child</p>
-    </h1>
+    </h3>
+</h5>
     
 </body>
 </html>
