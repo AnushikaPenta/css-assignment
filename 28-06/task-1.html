@@ -4,8 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+            overflow-y: scroll;
+            scrollbar-width :none;
+        }
+       ul{
+        list-style-type: none;
+        padding:2px 5px;
+        display:block;
+        background-color: white;
+        position: fixed;
+        top:-3vh;
+        width:102%;
+        z-index: 2;
+       
+
+
+        }
+        li{
+            float:right;
+            padding: 8px 10px;
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
+        li:hover{
+            background-color:darkgray;
+        }
+        .body{
+            position:relative;
+            z-index: -1;
+        }
+         .index{
+            position:absolute;
+            top:50%;
+            left:48%;
+            color: white;
+            font-size: 25px;
+        }
+        div b{
+            background-color: black;
+            padding:10px;
+        }
+        #projects{
+            
+            font-size: 25px;
+            top:20px;
+            display: block;
+        }
+        .container{
+            position: relative;
+            display:inline-block;
+            width:24%;
+
+        }
+        .container p{
+            background-color: black;
+            color: white;
+            width:130px;
+            height:20px;
+            padding:3px 2px ;
+            position: absolute;
+            top:-4.2px;
+            left:10px;
+            font-size: 19px;
+        }
+
+        .container img{
+            width:100%;
+            margin:3%;
+            height:100%;
+
+        }
+        
+        
+        
+        
+        
+    </style>
 </head>
 <body>
+                              <!--Navbar-->
+    <ul>
+        <li style="float:left;"><b>BR</b>Architects</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li><a href="#projects" style="text-decoration: none; color: black;">Projects</a></li>
+    </ul>
+                                <!--Body-->
+    <div class="body">
+    <img src="https://www.w3schools.com/w3images/architect.jpg">
+    <p class="index"><b>BR</b>Architects</p>
+    </div>
+                                <!--Projects-->
+   
+    <p id="projects">Projects</p>
+    <div class="container">
+        <p>Summer House</p>
+        <img src="https://www.w3schools.com/w3images/house5.jpg">
+    </div>
+
+
+    <div class="container">
+        <p>Brick House</p>
+        <img src="https://www.w3schools.com/w3images/house2.jpg">
+    </div>
+
+
+    <div class="container">
+        <p>Renovated</p>
+        <img src="https://www.w3schools.com/w3images/house3.jpg">
+    </div>
+
+
+    <div class="container">
+        <p>Barn House</p>
+        <img src="https://www.w3schools.com/w3images/house4.jpg">
+    </div>
+
+
+    <div class="container">
+        <p>Renovated</p>
+        <img src="https://www.w3schools.com/w3images/house3.jpg">
+    </div>
+
+    <div class="container">
+        <p>Barn House</p>
+        <img src="https://www.w3schools.com/w3images/house4.jpg">
+    </div>
+
+    <div class="container">
+        <p>Summer House</p>
+        <img src="https://www.w3schools.com/w3images/house5.jpg">
+    </div>
+        
+    <div class="container">
+        <p>Brick House</p>
+        <img src="https://www.w3schools.com/w3images/house2.jpg">
+    </div>
+   
     
+
+   
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        .box{
+            width:10px;
+            length:20px;
+            display: inline-block;
+            background-color: blueviolet;
+            color: blueviolet;
+            margin:8px;
+            position: relative;
+            top:200px;
+            left:250px;
+            animation-name: music;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;
+        }
+        .first{
+            animation-delay: 0.3s;
+           
+        }
+        .second{
+            animation-delay: 0.6s;
+        }
+        .third{
+            
+            animation-delay: 0.9s;
+        }
+        .fourth{
+            animation-delay: 1.2s;
+        }
+        .fifth{
+            animation-delay: 1.5s;
+        }
+        .sixth{
+            animation-delay: 1.8s;
+        }
+        @keyframes music{
+            from{
+                transform:scaleY(3);
+            }
+            to{
+                transform:scaleY(8);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="box first">a</div>
+    <div class="box second">b</div>
+    <div class="box third">c</div>
+    <div class="box fourth">d</div>
+    <div class="box fifth">e</div>
+    <div class="box sixth">f</div>
+</div>
+</body>
+</html>
